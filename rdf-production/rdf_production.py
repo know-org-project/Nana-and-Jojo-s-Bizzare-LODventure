@@ -3,7 +3,7 @@ from rdflib import Graph, Literal, URIRef, Namespace
 from rdflib.namespace import XSD, OWL
 import urllib.parse
 
-dir = "" #directory of the csv files
+dir = "https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/tree/main/csvs"
 csv = ["Amphora","Suit","Painting","FashionCollection","Album","MusicRecording","Movie","Poem","Shoes","Manga","MangaSeries","rel","Concept"]
 df_list = []
 for i in csv:
@@ -12,7 +12,7 @@ for i in csv:
   df_list.append(df)
 
 g = Graph()
-root = "http://w3id.org/project/"
+root = "https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/"
 prov = Namespace("http://www.w3.org/ns/prov#")
 dct = Namespace("http://purl.org/dc/terms/")
 schema = Namespace("https://schema.org/")
