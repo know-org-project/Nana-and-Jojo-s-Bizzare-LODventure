@@ -1,0 +1,97 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Ozymandias</title>
+                <author>Percy Bysshe Shelley</author>
+                <editor>Donald H. Reiman</editor>
+                <editor>Sharon B. Powers</editor>
+            </titleStmt>
+            <editionStmt>
+                <p>1ed. <date>1977</date>
+                </p>
+            </editionStmt>
+            <extent>728 pp</extent>
+            <publicationStmt>
+                <publisher>Internet Archive.org</publisher>
+                <distributor>Internet Archive.org</distributor>
+                <pubPlace>New York</pubPlace>
+                <date>2010</date>
+                <idno type="archiveIdentifier">shelleyspoetrypr00shel</idno>
+                <idno type="openLibrary">OL4893850M</idno>
+                <availability status="Free">
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                        <p>CreativeCommons 4.0</p>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title>Shelley's Poetry and Prose: Authoritative Texts Criticism</title>
+                <biblScope unit="page">103</biblScope>
+                <idno type="ISBN">0-39-309164-3</idno>
+            </seriesStmt>
+            <notesStmt>
+                <note>
+                "Ozymandias" is a sonnet written by the English Romantic poet Percy Bysshe Shelley (1792–1822). It was first published in the 11 January 1818 issue of The Examiner of London. The poem was included the following year in Shelley's collection "Rosalind and Helen, A Modern Eclogue; with Other Poems".
+                </note>
+                <note>The poem explores the worldly fate of history and the ravages of time: even the greatest men and the empires they forge are impermanent, their legacies fated to decay into oblivion.</note>
+                <note>
+                In "Shelley's Poetry and Prose: Authoritative Texts Criticism", Donald H. Reiman and Sharon B Powers re-edited all the texts from primary sources. All the poems and prose pieces have been thoroughly annotated with all biographical, historical, topographical, and literary allusions identified on its context.
+                </note>
+            </notesStmt>
+            <sourceDesc>
+                <biblFull>                      
+                     <titleStmt>
+                        <title>Ozymandias</title>
+                        <author>Percy Bysshe Shelley</author>
+                    </titleStmt>
+                    <editionStmt>
+                        <p>1ed. <date>1977</date>
+                        </p>
+                    </editionStmt>
+                    <extent>728 pp</extent>
+                    <publicationStmt>
+                        <publisher>Norton and Co Inc</publisher>
+                        <pubPlace>New York</pubPlace>
+                        <date>1977</date>
+                    </publicationStmt>
+                    <sourceDesc>
+                        <p>No source: this is an original work</p>
+                    </sourceDesc>
+                </biblFull>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>
+                    The TEI encoding of "Ozymandias" poem was developed for the "Information Science and Cultural Heritage" course (academic year 2023/2024) within the Digital Humanities and Digital Knowledge Master's Degree program at Alma Mater Studiorum - University of Bologna, on "Nana and Jojo's LODventures" Project.
+                </p>
+            </projectDesc>
+            <editorialDecl>
+                <p>
+                    All the characteristics of this version text are preserved.
+                </p>
+            </editorialDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text xml:lang="en">
+        <body>
+            <lg type="poem">
+                <l>I met a traveller from an antique land,</l>
+                <l>Who said—“Two vast and trunkless legs of stone</l>
+                <l>Stand in the desert. . . . Near them, on the sand,</l>
+                <l>Half sunk a shattered visage lies, whose frown,</l>
+                <l>And wrinkled lip, and sneer of cold command,</l>
+                <l>Tell that its sculptor well those passions read</l>
+                <l>Which yet survive, stamped on these lifeless things,</l>
+                <l>The hand that mocked them, and the heart that fed;</l>
+                <l>And on the pedestal, these words appear:</l>
+                <l>My name is Ozymandias, King of Kings;</l>
+                <l>Look on my Works, ye Mighty, and despair!</l>
+                <l>Nothing beside remains. Round the decay</l>
+                <l>Of that colossal Wreck, boundless and bare</l>
+                <l>The lone and level sands stretch far away.”</l>
+            </lg>
+        </body>
+    </text>
+</TEI>
