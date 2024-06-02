@@ -1,0 +1,8 @@
+Subject,Predicate,Object
+item/Poem,rdf:type,fabio:Poem
+item/Poem,frbrer:P3003,1818
+item/Poem,dc:isPartOf,"""Rosalind and Helen, a modern eclogue; with other poems:"""
+item/Poem,schema:genre,object/English_Romantism
+item/Poem,dc:creator,person/Percy_Bysshe_Shelley
+item/Poem,dc:publisher,organization/The_Examiner
+item/Poem,dc:title,Ozymandias

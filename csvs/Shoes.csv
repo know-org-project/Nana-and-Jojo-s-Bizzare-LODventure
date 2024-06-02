@@ -1,0 +1,8 @@
+Subject,Predicate,Object
+item/Shoes,rdf:type,eft:10249
+item/Shoes,dbo:releaseDate,1985
+item/Shoes,dc:creator,person/Vivienne_Westwood
+item/Shoes,schema:locationCreated,place/United_Kingdom
+item/Shoes,dc:title,Rocking Horse Shoes
+item/Shoes,dc:medium,Rubber
+item/Shoes,dc:medium,Leather

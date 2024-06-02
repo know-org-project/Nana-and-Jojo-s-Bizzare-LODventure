@@ -1,0 +1,8 @@
+Subject,Predicate,Object
+item/Painting,rdf:type,dbo:Painting
+item/Painting,frbrer:P3003,1953
+item/Painting,schema:genre,object/Belgian_Surrealism
+item/Painting,crm:P32_used_general_technique,Oil on canvas
+item/Painting,dbo:institution,organization/Menil_Collection
+item/Painting,dc:creator,person/Rene_Magritte
+item/Painting,dc:title,Golconda

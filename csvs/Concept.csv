@@ -1,0 +1,10 @@
+Subject,Predicate,Object
+concept/MainConcept,rdf:type,skos:Concept
+concept/MainConcept,skos:related,wd:Q8274
+concept/MainConcept,skos:related,wd:Q21198342
+concept/MainConcept,dc:description,Western References in Manga
+concept/MainConcept,skos:related,place/Europe
+concept/MainConcept,skos:related,place/United_States_of_America
+concept/MainConcept,skos:related,place/Japan
+concept/MainConcept,gvp:aat2894_exemplified_by,item/MangaSeries
+concept/MainConcept,gvp:aat2894_exemplified_by,item/Manga

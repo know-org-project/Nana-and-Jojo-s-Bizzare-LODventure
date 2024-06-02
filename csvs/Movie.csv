@@ -1,0 +1,9 @@
+Subject,Predicate,Object
+item/Movie,rdf:type,schema:Movie
+item/Movie,schema:producer,person/Carlo_Ponti
+item/Movie,schema:director,person/Michelangelo_Antonioni
+item/Movie,dbo:releaseDate,1966
+item/Movie,schema:genre,Drama 
+item/Movie,schema:genre,Mystery
+item/Movie,schema:genre,Thriller
+item/Movie,schema:locationCreated,place/Italy

@@ -1,0 +1,6 @@
+Subject,Predicate,Object
+item/FashionCollection,rdf:type,eft:10952
+item/FashionCollection,dbo:releaseDate,2011
+item/FashionCollection,dc:creator,organization/Gucci
+item/FashionCollection,dc:isPartOf,object/Runway_Show
+item/FashionCollection,dc:title,"""Gucci, Autumn-Winter 2011, Womenswear"""

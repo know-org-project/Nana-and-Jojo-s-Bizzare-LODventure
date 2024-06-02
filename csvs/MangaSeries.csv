@@ -1,0 +1,15 @@
+Subject,Predicate,Object
+item/MangaSeries,schema:genre,Supernatural
+item/MangaSeries,schema:genre,Adventure
+item/MangaSeries,crm:P67_refers_to,item/Painting
+item/MangaSeries,crm:P67_refers_to,item/Poem
+item/MangaSeries,frbrer:P3003,1987
+item/MangaSeries,dc:creator,person/Hirohiko_Araki
+item/MangaSeries,dc:isPartOf,object/Ultra_Jump
+item/MangaSeries,dc:publisher,organization/Shueisha
+item/MangaSeries,rdf:type,wd:Q21198342
+item/MangaSeries,dc:isPartOf,object/Weekly_Shonen_Jump
+item/MangaSeries,frapo:collaboratesWith,item/FashionCollection
+item/MangaSeries,crm:P67_refers_to,item/Amphora
+item/MangaSeries,crm:P67_refers_to,item/MusicRecording
+item/MangaSeries,dc:title,Jojo's Bizzare Adventure

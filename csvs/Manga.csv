@@ -1,0 +1,12 @@
+Subject,Predicate,Object
+item/Manga,schema:genre,Drama
+item/Manga,crm:P67_refers_to,item/Suit
+item/Manga,crm:P67_refers_to,item/Shoes
+item/Manga,frbrer:P3003,2000
+item/Manga,dc:creator,person/Ai_Yazawa
+item/Manga,crm:P67_refers_to,item/Album
+item/Manga,crm:P67_refers_to,item/Movie
+item/Manga,dc:isPartOf,object/Cookie
+item/Manga,dc:publisher,organization/Shueisha
+item/Manga,rdf:type,wd:Q8274
+item/Manga,dc:title,Nana

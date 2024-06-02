@@ -1,0 +1,7 @@
+Subject,Predicate,Object
+item/Album,rdf:type,schema:MusicAlbum
+item/Album,schema:genre,object/Rock
+item/Album,dbo:releaseDate,2002
+item/Album,dc:creator,person/Sex_Pistols
+item/Album,dc:publisher,organization/Virgin_Records
+item/Album,dc:title,Jubilee

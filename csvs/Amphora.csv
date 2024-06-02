@@ -1,0 +1,9 @@
+Subject,Predicate,Object
+item/Amphora,rdf:type,crm:E24_Physical_Human_Made_Thing
+item/Amphora,dc:coverage,ca.530 BCE
+item/Amphora,prov:wasAttributedTo,person/Euphiletos_Painter
+item/Amphora,schema:locationCreated,place/Ancient_Greece
+item/Amphora,dbo:institution,organization/The_MET_Museum
+item/Amphora,dc:medium,Terracotta
+item/Amphora,owl:sameAs,met:248902
+item/Amphora,dc:title,Terracotta Panathenaic prize amphora

@@ -1,0 +1,10 @@
+Subject,Predicate,Object
+item/MusicRecording,rdf:type,schema:MusicRecording
+item/MusicRecording,dc:creator,person/Queen
+item/MusicRecording,dc:isPartOf,object/Sheer_Heart_Attack
+item/MusicRecording,dc:publisher,organization/Trident_Studios
+item/MusicRecording,schema:genre,Art-Pop
+item/MusicRecording,dbo:releaseDate,1974
+item/MusicRecording,schema:genre,object/Rock
+item/MusicRecording,owl:sameAs,wd:Q829960
+item/MusicRecording,dc:title,Killer Queen

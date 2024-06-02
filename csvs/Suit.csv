@@ -1,0 +1,7 @@
+Subject,Predicate,Object
+item/Suit,rdf:type,eft:10002
+item/Suit,dbo:releaseDate,1953
+item/Suit,dbo:institution,organization/Victoria_and_Albert_Museum
+item/Suit,dc:creator,person/Vivienne_Westwood
+item/Suit,schema:locationCreated,place/United_Kingdom
+item/Suit,dc:title,Bondage Suit
