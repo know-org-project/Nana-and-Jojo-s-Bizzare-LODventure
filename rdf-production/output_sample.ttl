@@ -1,0 +1,128 @@
+@base <https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dbo: <https://dbpedia.org/ontology/> .
+@prefix dc1: <http://purl.org/dc/terms/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbrer: <https://www.iflastandards.info/fr/frbr/frbrer#> .
+@prefix gn: <http://www.geonames.org/ontology/documentation.html#> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdag1: <http://rdvocab.info/Elements/> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix eft: <http://thesaurus.europeanafashion.eu/thesaurus/> .
+@prefix foaf1: <http://xmlns.com/foaf/spec/#term_> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix viaf: <https://viaf.org/viaf/> .
+@prefix tgn: <http://vocab.getty.edu/page/tgn/> .
+
+<concept/MainConcept> a skos:Concept ;
+    dc1:description "Western References in Manga" ;
+    gvp:aat2894_exemplified_by <item/Manga>,
+        <item/MangaSeries> ;
+    skos:related wd:Q21198342,
+        wd:Q8274,
+        <place/Europe>,
+        <place/Japan>,
+        <place/United_States_of_America> .
+
+wd:Q21198342 skos:broader wd:Q8274 ;
+    schema:locationCreated <place/Japan> .
+
+wd:Q8274 schema:locationCreated <place/Japan> .
+
+<item/Manga> a wd:Q8274 ;
+    dc1:creator <person/Ai_Yazawa> ;
+    dc1:isPartOf <object/Cookie> ;
+    dc1:publisher <organization/Shueisha> ;
+    dc1:title "Nana" ;
+    crm:P67_refers_to <item/Album>,
+        <item/Movie>,
+        <item/Shoes>,
+        <item/Suit> ;
+    schema:genre "Drama" ;
+    frbrer:P3003 "2000" .
+
+<item/MangaSeries> a wd:Q21198342 ;
+    frapo:collaboratesWith <item/FashionCollection> ;
+    dc1:creator <person/Hirohiko_Araki> ;
+    dc1:isPartOf <object/Ultra_Jump>,
+        <object/Weekly_Shonen_Jump> ;
+    dc1:publisher <organization/Shueisha> ;
+    dc1:title "Jojo's Bizzare Adventure" ;
+    crm:P67_refers_to <item/Amphora>,
+        <item/MusicRecording>,
+        <item/Painting>,
+        <item/Poem> ;
+    schema:genre "Adventure",
+        "Supernatural" ;
+    frbrer:P3003 "1987" .
+
+<item/Poem> a fabio:Poem ;
+    dc1:creator <person/Percy_Bysshe_Shelley> ;
+    dc1:isPartOf "\"Rosalind and Helen, a modern eclogue; with other poems:\"" ;
+    dc1:publisher <organization/The_Examiner> ;
+    dc1:title "Ozymandias" ;
+    schema:genre <object/English_Romantism> ;
+    frbrer:P3003 "1818" .
+
+<item/Suit> a eft:10002 ;
+    dc1:creator <person/Vivienne_Westwood> ;
+    dc1:title "Bondage Suit" ;
+    dbo:institution <organization/Victoria_and_Albert_Museum> ;
+    dbo:releaseDate "1953" ;
+    schema:locationCreated <place/United_Kingdom> .
+
+<object/Cookie> a fabio:Periodical ;
+    rdag1:placeOfPublication <place/Japan> .
+
+<object/English_Romantism> a dbo:LiteraryGenre ;
+    schema:locationCreated <place/United_Kingdom> .
+
+<object/Ultra_Jump> a fabio:Periodical ;
+    rdag1:placeOfPublication <place/Japan> .
+
+<object/Weekly_Shonen_Jump> a fabio:Periodical ;
+    rdag1:placeOfPublication <place/Japan> .
+
+<organization/The_Examiner> a foaf1:Organization ;
+    rdag1:placeOfPublication <place/United_Kingdom> .
+
+<organization/Victoria_and_Albert_Museum> a foaf1:Organization ;
+    gn:locatedIn <place/United_Kingdom> .
+
+<person/Ai_Yazawa> a foaf1:Person ;
+    owl:sameAs viaf:116608684 ;
+    schema:birthPlace <place/Japan> .
+
+<person/Hirohiko_Araki> a foaf1:Person ;
+    owl:sameAs viaf:51908743 ;
+    schema:birthPlace <place/Japan> .
+
+<person/Percy_Bysshe_Shelley> a foaf1:Person ;
+    owl:sameAs viaf:95159449 ;
+    schema:birthPlace <place/United_Kingdom> .
+
+<person/Vivienne_Westwood> a foaf1:Person ;
+    owl:sameAs viaf:85586601 ;
+    schema:birthPlace <place/United_Kingdom> .
+
+<place/United_States_of_America> a schema:Country ;
+    owl:sameAs tgn:7012149 .
+
+<organization/Shueisha> a foaf1:Organization ;
+    schema:locationCreated <place/Japan> .
+
+<place/Europe> a schema:Continent ;
+    owl:sameAs tgn:1000003 ;
+    skos:narrower <place/United_Kingdom> .
+
+<place/United_Kingdom> a schema:Country ;
+    dc1:isPartOf <place/Europe> ;
+    owl:sameAs tgn:7008591 .
+
+<place/Japan> a schema:Country ;
+    owl:sameAs tgn:1000120 .
+

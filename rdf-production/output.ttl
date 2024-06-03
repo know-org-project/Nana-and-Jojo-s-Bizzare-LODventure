@@ -1,0 +1,262 @@
+@base <https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dbo: <https://dbpedia.org/ontology/> .
+@prefix dc1: <http://purl.org/dc/terms/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbrer: <https://www.iflastandards.info/fr/frbr/frbrer#> .
+@prefix gn: <http://www.geonames.org/ontology/documentation.html#> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdag1: <http://rdvocab.info/Elements/> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix eft: <http://thesaurus.europeanafashion.eu/thesaurus/> .
+@prefix foaf1: <http://xmlns.com/foaf/spec/#term_> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix viaf: <https://viaf.org/viaf/> .
+@prefix tgn: <http://vocab.getty.edu/page/tgn/> .
+
+<concept/MainConcept> a skos:Concept ;
+    dc1:description "Western References in Manga" ;
+    gvp:aat2894_exemplified_by <item/Manga>,
+        <item/MangaSeries> ;
+    skos:related wd:Q21198342,
+        wd:Q8274,
+        <place/Europe>,
+        <place/Japan>,
+        <place/United_States_of_America> .
+
+wd:Q21198342 skos:broader wd:Q8274 ;
+    schema:locationCreated <place/Japan> .
+
+wd:Q8274 schema:locationCreated <place/Japan> .
+
+<item/Album> a schema:MusicAlbum ;
+    dc1:creator <person/Sex_Pistols> ;
+    dc1:publisher <organization/Virgin_Records> ;
+    dc1:title "Jubilee" ;
+    owl:sameAs <https://search.worldcat.org/title/659263635> ;
+    dbo:releaseDate "2002" ;
+    schema:genre <object/Rock> .
+
+<item/Amphora> a crm:E24_Physical_Human_Made_Thing ;
+    dc1:coverage "ca.530 BCE" ;
+    dc1:medium "Terracotta" ;
+    dc1:title "Terracotta Panathenaic prize amphora" ;
+    owl:sameAs <https://www.metmuseum.org/art/collection/search/248902> ;
+    prov:wasAttributedTo <person/Euphiletos_Painter> ;
+    dbo:institution <organization/The_MET_Museum> ;
+    schema:locationCreated <place/Ancient_Greece> .
+
+<item/FashionCollection> a eft:10952 ;
+    dc1:creator <organization/Gucci> ;
+    dc1:isPartOf <object/Runway_Show> ;
+    dc1:title "\"Gucci, Autumn-Winter 2011, Womenswear\"" ;
+    owl:sameAs <https://www.europeana.eu/en/item/2048212/europeana_fashion_gucci_aw11_0115> ;
+    dbo:releaseDate "2011" .
+
+<item/Manga> a wd:Q8274 ;
+    dc1:creator <person/Ai_Yazawa> ;
+    dc1:isPartOf <object/Cookie> ;
+    dc1:publisher <organization/Shueisha> ;
+    dc1:title "Nana" ;
+    crm:P67_refers_to <item/Album>,
+        <item/Movie>,
+        <item/Shoes>,
+        <item/Suit> ;
+    owl:sameAs <https://whiteoak.library.link/portal/jtAnfd1D4bE> ;
+    schema:genre "Drama" ;
+    frbrer:P3003 "2000" .
+
+<item/MangaSeries> a wd:Q21198342 ;
+    frapo:collaboratesWith <item/FashionCollection> ;
+    dc1:creator <person/Hirohiko_Araki> ;
+    dc1:isPartOf <object/Ultra_Jump>,
+        <object/Weekly_Shonen_Jump> ;
+    dc1:publisher <organization/Shueisha> ;
+    dc1:title "Jojo's Bizzare Adventure" ;
+    crm:P67_refers_to <item/Amphora>,
+        <item/MusicRecording>,
+        <item/Painting>,
+        <item/Poem> ;
+    owl:sameAs wd:Q696918 ;
+    schema:genre "Adventure",
+        "Supernatural" ;
+    frbrer:P3003 "1987" .
+
+<item/Movie> a schema:Movie ;
+    owl:sameAs <https://www.imdb.com/title/tt0060176/> ;
+    dbo:releaseDate "1966" ;
+    schema:director <person/Michelangelo_Antonioni> ;
+    schema:genre "Drama ",
+        "Mystery",
+        "Thriller" ;
+    schema:locationCreated <place/Italy> ;
+    schema:producer <person/Carlo_Ponti> .
+
+<item/MusicRecording> a schema:MusicRecording ;
+    dc1:creator <person/Queen> ;
+    dc1:isPartOf <object/Sheer_Heart_Attack> ;
+    dc1:publisher <organization/Trident_Studios> ;
+    dc1:title "Killer Queen" ;
+    owl:sameAs wd:Q829960 ;
+    dbo:releaseDate "1974" ;
+    schema:genre <object/Rock>,
+        "Art-Pop" .
+
+<item/Painting> a dbo:Painting ;
+    dc1:creator <person/Rene_Magritte> ;
+    dc1:title "Golconda" ;
+    crm:P32_used_general_technique "Oil on canvas" ;
+    owl:sameAs wd:Q663481 ;
+    dbo:institution <organization/Menil_Collection> ;
+    schema:genre <object/Belgian_Surrealism> ;
+    frbrer:P3003 "1953" .
+
+<item/Poem> a fabio:Poem ;
+    dc1:creator <person/Percy_Bysshe_Shelley> ;
+    dc1:isPartOf "\"Rosalind and Helen, a modern eclogue; with other poems:\"" ;
+    dc1:publisher <organization/The_Examiner> ;
+    dc1:title "Ozymandias" ;
+    owl:sameAs wd:Q662166 ;
+    schema:genre <object/English_Romantism> ;
+    frbrer:P3003 "1818" .
+
+<item/Shoes> a eft:10249 ;
+    dc1:creator <person/Vivienne_Westwood> ;
+    dc1:medium "Leather",
+        "Rubber" ;
+    dc1:title "Rocking Horse Shoes" ;
+    owl:sameAs <https://www.europeana.eu/en/item/2048222/europeana_fashion_1981> ;
+    dbo:releaseDate "1985" ;
+    schema:locationCreated <place/United_Kingdom> .
+
+<item/Suit> a eft:10002 ;
+    dc1:creator <person/Vivienne_Westwood> ;
+    dc1:title "Bondage Suit" ;
+    owl:sameAs <https://collections.vam.ac.uk/item/O72586/bondage-suit-vivienne-westwood/> ;
+    dbo:institution <organization/Victoria_and_Albert_Museum> ;
+    dbo:releaseDate "1953" ;
+    schema:locationCreated <place/United_Kingdom> .
+
+<object/Belgian_Surrealism> a dbo:ArtisticGenre ;
+    schema:locationCreated <place/Belgium> .
+
+<object/Cookie> a fabio:Periodical ;
+    rdag1:placeOfPublication <place/Japan> .
+
+<object/English_Romantism> a dbo:LiteraryGenre ;
+    schema:locationCreated <place/United_Kingdom> .
+
+<object/Runway_Show> a schema:Event ;
+    dc1:title "\"Gucci Women's Fall-Winter 2011-12 Runway Show\"" ;
+    gvp:aat2422_takes_place_in <place/Italy> .
+
+<object/Sheer_Heart_Attack> a schema:MusicAlbum ;
+    dc1:publisher <organization/Trident_Studios> .
+
+<object/Ultra_Jump> a fabio:Periodical ;
+    rdag1:placeOfPublication <place/Japan> .
+
+<object/Weekly_Shonen_Jump> a fabio:Periodical ;
+    rdag1:placeOfPublication <place/Japan> .
+
+<organization/Gucci> a foaf1:Organization ;
+    owl:sameAs wd:Q178516 ;
+    schema:locationCreated <place/Italy> .
+
+<organization/Menil_Collection> a foaf1:Organization ;
+    gn:locatedIn <place/United_States_of_America> .
+
+<organization/The_Examiner> a foaf1:Organization ;
+    rdag1:placeOfPublication <place/United_Kingdom> .
+
+<organization/The_MET_Museum> a foaf1:Organization ;
+    gn:locatedIn <place/United_States_of_America> .
+
+<organization/Victoria_and_Albert_Museum> a foaf1:Organization ;
+    gn:locatedIn <place/United_Kingdom> .
+
+<organization/Virgin_Records> a foaf1:Organization ;
+    schema:locationCreated <place/United_Kingdom> .
+
+<person/Ai_Yazawa> a foaf1:Person ;
+    owl:sameAs viaf:116608684 ;
+    schema:birthPlace <place/Japan> .
+
+<person/Carlo_Ponti> a foaf1:Person ;
+    owl:sameAs viaf:117455224 ;
+    schema:birthPlace <place/Italy> .
+
+<person/Euphiletos_Painter> a foaf1:Person ;
+    owl:sameAs wd:Q1374087 ;
+    schema:birthPlace <place/Ancient_Greece> .
+
+<person/Hirohiko_Araki> a foaf1:Person ;
+    owl:sameAs viaf:51908743 ;
+    schema:birthPlace <place/Japan> .
+
+<person/Michelangelo_Antonioni> a foaf1:Person ;
+    owl:sameAs viaf:110291829 ;
+    schema:birthPlace <place/Italy> .
+
+<person/Percy_Bysshe_Shelley> a foaf1:Person ;
+    owl:sameAs viaf:95159449 ;
+    schema:birthPlace <place/United_Kingdom> .
+
+<person/Queen> a schema:MusicGroup ;
+    owl:sameAs viaf:133624743 .
+
+<person/Rene_Magritte> a foaf1:Person ;
+    owl:sameAs viaf:69008939 ;
+    schema:birthPlace <place/Belgium> .
+
+<person/Sex_Pistols> a schema:MusicGroup ;
+    owl:sameAs wd:Q82545 ;
+    schema:locationCreated <place/United_Kingdom> .
+
+<object/Rock> a dbo:MusicGenre ;
+    schema:locationCreated <place/United_Kingdom>,
+        <place/United_States_of_America> .
+
+<organization/Shueisha> a foaf1:Organization ;
+    schema:locationCreated <place/Japan> .
+
+<organization/Trident_Studios> a foaf1:Organization ;
+    gn:locatedIn <place/United_Kingdom> .
+
+<person/Vivienne_Westwood> a foaf1:Person ;
+    owl:sameAs viaf:85586601 ;
+    schema:birthPlace <place/United_Kingdom> .
+
+<place/Ancient_Greece> a dbo:Place ;
+    dc1:isPartOf <place/Europe> ;
+    owl:sameAs wd:Q11772 .
+
+<place/Belgium> a schema:Country ;
+    dc1:isPartOf <place/Europe> ;
+    owl:sameAs tgn:1000063 .
+
+<place/United_States_of_America> a schema:Country ;
+    owl:sameAs tgn:7012149 .
+
+<place/Europe> a schema:Continent ;
+    owl:sameAs tgn:1000003 ;
+    skos:narrower <place/Belgium>,
+        <place/Italy>,
+        <place/United_Kingdom> .
+
+<place/Italy> a schema:Country ;
+    dc1:isPartOf <place/Europe> ;
+    owl:sameAs tgn:1000080 .
+
+<place/Japan> a schema:Country ;
+    owl:sameAs tgn:1000120 .
+
+<place/United_Kingdom> a schema:Country ;
+    dc1:isPartOf <place/Europe> ;
+    owl:sameAs tgn:7008591 .
+
