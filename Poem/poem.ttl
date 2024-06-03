@@ -1,0 +1,53 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/poem/ozymandias> a <http://www.tei-c.org/ns/1.0/Poem> ;
+    dc:contributor <https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/editor/Donald_H._Reiman>,
+        <https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/editor/Sharon_B._Powers> ;
+    dc:creator <https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/poem/author/Percy_Bysshe_Shelley> ;
+    dc:description <https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/note/1>,
+        <https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/note/2>,
+        <https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/note/3> ;
+    dc:publisher <https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/publisher/Internet_Archive.org>,
+        <https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/publisher/Norton_and_Co_Inc> ;
+    dc:title "Ozymandias" ;
+    dcterms:isPartOf <https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/book/Shelley's_Poetry_and_Prose:_Authoritative_Texts_Criticism> .
+
+<https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/book/Shelley's_Poetry_and_Prose:_Authoritative_Texts_Criticism> dc:identifier "0-39-309164-3" ;
+    dc:title "Shelley's Poetry and Prose: Authoritative Texts Criticism" ;
+    dcterms:hasVersion "1ed." .
+
+<https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/editor/Donald_H._Reiman> a foaf:Person ;
+    foaf:name "Donald H. Reiman" .
+
+<https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/editor/Sharon_B._Powers> a foaf:Person ;
+    foaf:name "Sharon B. Powers" .
+
+<https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/note/1> a rdfs:Literal ;
+    rdfs:comment """
+                "Ozymandias" is a sonnet written by the English Romantic poet Percy Bysshe Shelley (1792–1822). It was first published in the 11 January 1818 issue of The Examiner of London. The poem was included the following year in Shelley's collection "Rosalind and Helen, A Modern Eclogue; with Other Poems".
+                """ .
+
+<https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/note/2> a rdfs:Literal ;
+    rdfs:comment "The poem explores the worldly fate of history and the ravages of time: even the greatest men and the empires they forge are impermanent, their legacies fated to decay into oblivion." .
+
+<https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/note/3> a rdfs:Literal ;
+    rdfs:comment """
+                In "Shelley's Poetry and Prose: Authoritative Texts Criticism", Donald H. Reiman and Sharon B Powers re-edited all the texts from primary sources. All the poems and prose pieces have been thoroughly annotated with all biographical, historical, topographical, and literary allusions identified on its context.
+                """ .
+
+<https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/poem/author/Percy_Bysshe_Shelley> a foaf:Person ;
+    foaf:name "Percy Bysshe Shelley" .
+
+<https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/publisher/Internet_Archive.org> a foaf:Organization ;
+    dcterms:issued "2010-01-01"^^xsd:date ;
+    dcterms:spatial "New York" ;
+    foaf:name "Internet Archive.org" .
+
+<https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/publisher/Norton_and_Co_Inc> a foaf:Organization ;
+    dcterms:issued "1977-01-01"^^xsd:date ;
+    dcterms:spatial "New York" ;
+    foaf:name "Norton and Co Inc" .
