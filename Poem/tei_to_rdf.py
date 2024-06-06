@@ -35,8 +35,8 @@ isbn = root.find('.//{http://www.tei-c.org/ns/1.0}seriesStmt/{http://www.tei-c.o
 # Adding book name, edition, notes, and ISBN to the graph
 book_uri = URIRef("https://github.com/know-org-project/Nana-and-Jojo-s-Bizzare-LODventure/book/" + book_name.replace(" ", "_"))
 g.add((book_uri, DC.title, Literal(book_name)))
-g.add((poem_uri, DCTERMS.isPartOf, book_uri))  # Correcting the relationship
-g.add((book_uri, DCTERMS.hasVersion, Literal(edition)))  # Ensure edition is displayed
+g.add((poem_uri, DCTERMS.isPartOf, book_uri))  
+g.add((book_uri, DCTERMS.hasVersion, Literal(edition)))  # edition is displayed
 g.add((book_uri, DC.identifier, Literal(isbn)))
 
 for index, note in enumerate(notes):
